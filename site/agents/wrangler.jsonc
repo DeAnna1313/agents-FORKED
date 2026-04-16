@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/wrangler/config-schema.json",
-  "name": "agents-site",
+  "name": "xentric-agent",
   "compatibility_date": "2026-01-28",
   "main": "./src/server/index.ts",
   "compatibility_flags": ["nodejs_compat"],
@@ -9,6 +9,15 @@
     // "not_found_handling": "single-page-application",
     "run_worker_first": ["/agents/*", "/mcp"]
   },
+  "observability": {
+    "enabled": true
+  },
+  "routes": [
+    {
+      "pattern": "agent.xentric-ai.com/*",
+      "zone_name": "xentric-ai.com"
+    }
+  ],
   "kv_namespaces": [
     {
       "binding": "DOCS_KV",
