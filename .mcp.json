@@ -2,7 +2,7 @@
   "mcpServers": {
     "agents": {
       "type": "http",
-      "url": "https://agents.cloudflare.com/mcp"
+      "url": "https://agent.xentric-ai.com/mcp"
     }
   }
 }

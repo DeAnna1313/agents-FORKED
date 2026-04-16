@@ -1,10 +1,10 @@
 {
   "linkset": [
     {
-      "anchor": "https://agents.cloudflare.com/mcp",
+      "anchor": "https://agent.xentric-ai.com/mcp",
       "service-desc": [
         {
-          "href": "https://agents.cloudflare.com/.well-known/mcp-openapi.json",
+          "href": "https://agent.xentric-ai.com/.well-known/mcp-openapi.json",
           "type": "application/vnd.oai.openapi+json"
         }
       ],
@@ -16,13 +16,13 @@
       ],
       "service-meta": [
         {
-          "href": "https://agents.cloudflare.com/.well-known/mcp/server-card.json",
+          "href": "https://agent.xentric-ai.com/.well-known/mcp/server-card.json",
           "type": "application/json"
         }
       ],
       "status": [
         {
-          "href": "https://agents.cloudflare.com/status.json",
+          "href": "https://agent.xentric-ai.com/status.json",
           "type": "application/json"
         }
       ]

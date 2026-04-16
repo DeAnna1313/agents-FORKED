@@ -1,6 +1,7 @@
 {
   "$schema": "../../node_modules/wrangler/config-schema.json",
   "name": "xentric-agent",
+  "workers_dev": true,
   "compatibility_date": "2026-01-28",
   "main": "./src/server/index.ts",
   "compatibility_flags": ["nodejs_compat"],
@@ -21,7 +22,7 @@
   "kv_namespaces": [
     {
       "binding": "DOCS_KV",
-      "id": "c438ca2bb9d84bbabb45ae5ca29dcce5"
+      "id": "5c37c02234a7414a8622811462bfc4af"
     }
   ]
 }

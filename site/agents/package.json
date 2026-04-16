@@ -6,7 +6,8 @@
     "start": "astro dev",
     "dev": "wrangler dev",
     "types": "wrangler types env.d.ts --include-runtime false",
-    "deploy": "astro build && wrangler deploy"
+    "deploy": "astro build && wrangler deploy",
+    "test:smoke": "node ./scripts/smoke-test.mjs"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.10",

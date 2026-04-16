@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://agents.cloudflare.com"
+      "url": "https://agent.xentric-ai.com"
     }
   ],
   "externalDocs": {

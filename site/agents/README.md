@@ -32,6 +32,23 @@ npm run build
 npm run deploy
 ```
 
+## Smoke Testing
+
+Run the deployed-site smoke suite against the canonical custom domain:
+
+```bash
+npm run test:smoke
+```
+
+Run it against another route while keeping the custom domain as the advertised
+canonical endpoint:
+
+```bash
+SITE_URL=https://xentric-agent.deanna11011101.workers.dev \
+CANONICAL_URL=https://agent.xentric-ai.com \
+npm run test:smoke
+```
+
 ## Tech Stack
 
 - **Astro** - Modern web framework
@@ -43,8 +60,8 @@ npm run deploy
 
 # Agents MCP Server
 
-[![Add to Cursor](https://img.shields.io/badge/Add%20to-Cursor-blue)](https://cursor.com/en-US/install-mcp?name=cloudflare-agents&config=eyJ1cmwiOiJodHRwczovL2FnZW50cy5jbG91ZGZsYXJlLmNvbS9tY3AifQ%3D%3D)
-[![Add to VS Code](https://img.shields.io/badge/Add%20to-VS%20Code-blue)](vscode:mcp/install?%7B%22name%22%3A%22cloudflare-agents%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fagents.cloudflare.com%2Fmcp%22%7D)
+[![Add to Cursor](https://img.shields.io/badge/Add%20to-Cursor-blue)](https://cursor.com/en-US/install-mcp?name=cloudflare-agents&config=eyJ1cmwiOiJodHRwczovL2FnZW50LnhlbnRyaWMtYWkuY29tL21jcCJ9)
+[![Add to VS Code](https://img.shields.io/badge/Add%20to-VS%20Code-blue)](vscode:mcp/install?%7B%22name%22%3A%22cloudflare-agents%22%2C%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fagent.xentric-ai.com%2Fmcp%22%7D)
 
 This is an MCP server for anyone building with Agents SDK. It exposes just 1 tool.
 
@@ -72,7 +89,7 @@ This is an MCP server for anyone building with Agents SDK. It exposes just 1 too
 Connect to this MCP server to any MCP Client that supports remote MCP servers.
 
 ```txt
-https://agents.cloudflare.com/mcp
+https://agent.xentric-ai.com/mcp
 ```
 
 ## How it works
